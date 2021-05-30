@@ -28,3 +28,15 @@ plt.ylabel('Vertical Position of the Ball')
 plt.plot(xs, ys, xs2, ys2, xs3, ys3, xs4, ys4)
 plt.show()
 
+#This plots the tangent 
+xs5 = [0.3, 0.3]
+ys5 = [0, ball_trajectory(0.3)]
+xs6 = [0.3, 2]
+ys6 = [0,0]
+plt.title('The Trajectory of a Thrown Ball = Tangent Calculation')
+plt.xlabel('Horizontal Position of the Ball')
+plt.ylabel('Vertical Position of Ball')
+plt.plot(xs, ys, xs4, ys4, xs5, ys5, xs6, ys6)
+plt.text(0.31,ball_trajectory(0.3/2), 'A', fontsize = 16)
+plt.text((0.3 + 2)/2,0.05, 'B', fontsize = 16)
+plt.show()
